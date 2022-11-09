@@ -1,0 +1,353 @@
+.document-container {
+  overflow: hidden;
+  /* width: min(70%, 90.5rem); */
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url("Myriad Pro Regular.ttf");
+}
+
+@font-face {
+  font-family: MyriadPro-Semibold;
+  src: url("Myriad Pro Semibold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: MyriadPro-Regular;
+}
+
+/* Section 1 */
+
+.section-1 {
+  background-image: url("Aclaris-home-hero-desktop.jpg");
+  padding-left: 377px;
+  padding-right: 355.82px;
+}
+
+/* Header */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.dropdown,
+.dropdown-btn {
+  height: 100%;
+}
+
+.dropdown-btn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(114, 80, 135);
+  width: 750px;
+  height: 150px;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: orange;
+}
+
+.dropdown-btn:hover {
+  background-color: rgb(114, 80, 135);
+  color: orange;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 164px;
+  height: 60px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.nav-container {
+  width: calc(100% - 100px);
+  height: 80px;
+  padding-left: 100px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list > li {
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+}
+
+.mobile-hand {
+  display: none;
+}
+
+/* .desktop-hand {
+  display: block;
+} */
+
+.hero-left {
+  padding: 72px 0;
+}
+
+.title-first-row {
+  font-family: MyriadPro-Semibold;
+  font-size: larger;
+  color: #fff;
+}
+
+.title-second-row {
+  font-family: MyriadPro-Semibold;
+  font-size: 72px;
+  color: orange;
+}
+
+.title-third-row {
+  font-family: MyriadPro-Semibold;
+  font-size: 72px;
+  color: #fff;
+}
+
+.hero-text {
+  color: #fff;
+}
+
+.button-hero {
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+  font-family: MyriadPro-Semibold;
+  font-size: 20px;
+  background: transparent;
+  color: #f27c1d;
+  border: 1px solid #f27c1d;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Section 2 */
+
+.section-2 {
+  background-image: url("home-testimonial-bg.jpg");
+  padding-left: 377px;
+  padding-right: 355.82px;
+}
+
+.testimonial-container {
+  display: flex;
+}
+
+.quotes {
+  width: 49px;
+  height: 136px;
+}
+
+.testimonial-text {
+  font-size: 20px;
+  margin: 45px 0 0 15px;
+  line-height: 30px;
+}
+
+.testimonial-signature {
+  font-size: 12px;
+}
+
+/* Section 3 */
+
+.join-team-container {
+  display: flex;
+  align-items: center;
+}
+
+.join-team-left {
+  padding-left: 377px;
+  max-width: 500px;
+}
+
+.join-team-text h3 {
+  font-family: MyriadPro-Semibold;
+  font-size: 22px;
+  color: gold;
+}
+
+.join-team-text p {
+  font-size: 16px;
+}
+
+.button-larger {
+  width: 210px;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 150, 0, 1) 0%,
+    rgb(255, 190, 0, 1) 60%
+  );
+  padding-left: 377px;
+  padding-right: 355.82px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  font-size: 14px;
+  color: #fff;
+  width: 350px;
+}
+
+.footer-notes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.footer-notes > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.linkedin-logo {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+/* Modal */
+
+.modal {
+  position: relative;
+  z-index: 1;
+  top: 100px;
+  left: 377px;
+  right: 0;
+  transform: translate(0, -220px);
+  width: 930px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  overflow: hidden;
+}
+
+.modal-left-titles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.modal-left-titles-container h3 {
+  font-family: MyriadPro-Semibold;
+  font-size: 22px;
+  color: gold;
+}
+
+.modal-left-titles-container h4 {
+  cursor: pointer;
+}
+
+.modal-left-text {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-left-text p {
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+.modal-right {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 120, 0, 1) 0%,
+    rgba(240, 197, 50, 1) 100%
+  );
+}
+
+.modal-right h3 {
+  font-family: MyriadPro-Semibold;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.stock-numbers span:first-child {
+  font-size: 65px;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.stock-numbers span:last-child {
+  font-size: 25px;
+  color: #fff;
+  margin: -25px;
+}
+
+.stock-text {
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.stock-link {
+  width: 120px;
+  margin: 15px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile */

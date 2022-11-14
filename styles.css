@@ -19,6 +19,12 @@ body {
   font-family: MyriadPro-Regular;
 }
 
+/* img {
+  display: block;
+  min-width: 700px;
+  max-width: 100%;
+} */
+
 /* Section 1 */
 
 .section-1 {
@@ -124,13 +130,13 @@ body {
   display: none;
 }
 
-/* .desktop-hand {
-  display: block;
-} */
-
 .hero-left {
   padding: 72px 0;
 }
+
+/* .hero-right {
+  max-width: 100%;
+} */
 
 .title-first-row {
   font-family: MyriadPro-Semibold;
@@ -179,7 +185,15 @@ body {
   display: flex;
 }
 
-.quotes {
+.mobile-portrait {
+  display: none;
+}
+
+.mobile-quotes {
+  display: none;
+}
+
+.desktop-quotes {
   width: 49px;
   height: 136px;
 }
@@ -194,11 +208,43 @@ body {
   font-size: 12px;
 }
 
+.desktop-button-larger {
+  width: 210px;
+  height: 40px;
+  margin-top: 20px;
+  font-family: MyriadPro-Semibold;
+  font-size: 20px;
+  background: transparent;
+  color: #f27c1d;
+  border: 1px solid #f27c1d;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mobile-button-larger {
+  display: none;
+  width: 210px;
+  height: 40px;
+  margin: 30px auto 50px auto;
+  font-family: MyriadPro-Semibold;
+  font-size: 20px;
+  background: transparent;
+  color: #f27c1d;
+  border: 1px solid #f27c1d;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 /* Section 3 */
 
 .join-team-container {
   display: flex;
   align-items: center;
+  background-color: #fffeed;
+}
+
+.mobile-join-team {
+  display: none;
 }
 
 .join-team-left {
@@ -214,10 +260,6 @@ body {
 
 .join-team-text p {
   font-size: 16px;
-}
-
-.button-larger {
-  width: 210px;
 }
 
 /* Footer */
@@ -272,7 +314,7 @@ footer {
   transform: translate(0, -220px);
   width: 930px;
   height: 300px;
-  background-color: #fff;
+  background-color: #fffeed;
   border-radius: 40px;
   box-shadow: 0px 10px 13px -7px #000000;
 }
@@ -283,20 +325,20 @@ footer {
   overflow: hidden;
 }
 
-.modal-left-titles-container {
+.modal-left-titles {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
 }
 
-.modal-left-titles-container h3 {
+.modal-left-titles h3 {
   font-family: MyriadPro-Semibold;
   font-size: 22px;
   color: gold;
 }
 
-.modal-left-titles-container h4 {
+.modal-left-titles h4 {
   cursor: pointer;
 }
 
@@ -350,4 +392,270 @@ footer {
   cursor: pointer;
 }
 
-/* Mobile */
+/*---------- Mobile ---------- */
+
+@media only screen and (max-width: 320px) {
+  .document-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Section 1 */
+
+  .section-1 {
+    background-image: url("Aclaris-home-hero-mobile_01.jpg");
+    padding-left: 13px;
+    padding-right: 0;
+    padding-bottom: 55px;
+  }
+
+  /* Header */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 13px;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .logo {
+    width: 110px;
+    height: 40px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    /* width: 45px; */
+  }
+
+  .mobile-menu-icon img {
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 45px;
+    height: 45px;
+    filter: invert(67%) sepia(78%) saturate(4017%) hue-rotate(351deg)
+      brightness(100%) contrast(91%);
+  }
+
+  /* Hero */
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-left {
+    padding: 0;
+    padding-right: 13px;
+  }
+
+  .hero-left h1 {
+    margin-top: 0;
+  }
+
+  .desktop-hand {
+    display: none;
+  }
+
+  .mobile-hand {
+    display: block;
+    max-width: 100%;
+  }
+
+  .title-first-row {
+    font-size: 16px;
+  }
+
+  .title-second-row {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .title-third-row {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  /* Modal */
+
+  .modal {
+    position: static;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transform: none;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    box-shadow: 0 0 0 0 #000000;
+  }
+
+  .modal-left-titles {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 13px;
+  }
+
+  .modal-left-titles h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .modal-left-titles h4 {
+    margin: 5px 0 10px 0;
+  }
+
+  .modal-left-text {
+    padding: 0 13px;
+    display: block;
+  }
+
+  .modal-right h3 {
+    padding: 0 13px;
+  }
+
+  .stock-numbers span:first-child {
+    padding: 0 13px;
+  }
+
+  .stock-numbers span:last-child {
+    margin: 0;
+  }
+
+  .stock-text {
+    padding: 0 13px;
+    margin: 10px 0;
+  }
+
+  .stock-link {
+    width: 120px;
+    padding: 0 13px;
+    margin: 40px 0 30px 0;
+  }
+
+  /* Section 2 */
+
+  .section-2 {
+    background-image: none;
+    padding: 0;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+  }
+
+  .desktop-portrait {
+    display: none;
+  }
+
+  .mobile-portrait {
+    display: block;
+    max-width: 100%;
+  }
+
+  .testimonial-right {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 13px;
+  }
+
+  .desktop-quotes {
+    display: none;
+  }
+
+  .mobile-quotes {
+    display: block;
+    width: 49px;
+    height: 136px;
+  }
+
+  .desktop-button-larger {
+    display: none;
+  }
+
+  .mobile-button-larger {
+    display: block;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .testimonial-signature {
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 20px;
+  }
+
+  /* Section 3 */
+
+  .join-team-container {
+    flex-direction: column-reverse;
+  }
+
+  .desktop-join-team {
+    display: none;
+  }
+
+  .mobile-join-team {
+    display: block;
+    max-width: 100%;
+  }
+
+  .join-team-left {
+    padding: 0 13px;
+  }
+
+  .join-team-text h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .join-team-text p {
+    margin: 5px 0 0 0;
+  }
+
+  .button-join {
+    margin: 30px 0 50px 0;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 0 13px;
+    padding-top: 25px;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .linkedin-logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .footer-notes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-left p {
+    width: 200px;
+    margin: 40px 0 30px 0;
+  }
+}

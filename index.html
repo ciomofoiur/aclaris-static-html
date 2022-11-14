@@ -9,6 +9,34 @@
   </head>
   <body>
     <div class="document-container">
+      <div class="mobile-menu" id="menu">
+        <div class="menu-wrapper">
+          <div class="menu-header">
+            <a href="#" class="logo">
+              <img src="logo.svg" alt="Logo" />
+            </a>
+            <div class="mobile-X-icon">
+              <img src="X.svg" alt="X" onclick="toggleMenu()" />
+            </div>
+          </div>
+          <div class="menu-container">
+            <ul class="nav-list">
+              <li style="color: orange">Home</li>
+              <li>About Us »</li>
+              <li>Research »</li>
+              <li>Products</li>
+              <li>Citizenship »</li>
+              <li>Careers</li>
+              <li>Insights</li>
+              <li>Investors »</li>
+            </ul>
+            <ul class="nav-list-bottom">
+              <li>Media resources</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <section class="section-1">
         <header>
           <div class="navbar">
@@ -16,7 +44,7 @@
               <img src="logo.svg" alt="Logo" />
             </a>
             <div class="mobile-menu-icon">
-              <img src="Hamburger_icon.svg" alt="" />
+              <img src="Hamburger_icon.svg" alt="" onclick="toggleMenu()" />
             </div>
             <div class="nav-container">
               <ul class="nav-list">
@@ -199,5 +227,19 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      var menu = document.getElementById("menu");
+
+      menu.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menu.style.display == "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

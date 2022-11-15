@@ -12,8 +12,8 @@
       <div class="mobile-menu" id="menu">
         <div class="menu-wrapper">
           <div class="menu-header">
-            <a href="#" class="logo">
-              <img src="logo.svg" alt="Logo" />
+            <a href="#">
+              <img src="logo.svg" alt="Logo" class="mobile-logo" />
             </a>
             <div class="mobile-X-icon">
               <img src="X.svg" alt="X" onclick="toggleMenu()" />
@@ -21,7 +21,7 @@
           </div>
           <div class="menu-container">
             <ul class="nav-list">
-              <li style="color: orange">Home</li>
+              <li>Home</li>
               <li>About Us »</li>
               <li>Research »</li>
               <li>Products</li>
@@ -40,8 +40,9 @@
       <section class="section-1">
         <header>
           <div class="navbar">
-            <a href="#" class="logo">
-              <img src="logo.svg" alt="Logo" />
+            <a href="#">
+              <img src="logo.svg" alt="Logo" class="desktop-logo" />
+              <img src="logo.svg" alt="Logo" class="mobile-logo" />
             </a>
             <div class="mobile-menu-icon">
               <img src="Hamburger_icon.svg" alt="" onclick="toggleMenu()" />
@@ -59,12 +60,24 @@
                     <a href="">Contact</a>
                   </div>
                 </li>
-                <li>Research</li>
-                <li>Products</li>
-                <li>Citizenship</li>
-                <li>Careers</li>
-                <li>Insights</li>
-                <li>Investors</li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Research</button>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Products</button>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Citizenship</button>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Careers</button>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Insights</button>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-btn">Investors</button>
+                </li>
               </ul>
             </div>
           </div>
@@ -174,7 +187,9 @@
             </div>
             <button class="desktop-button-larger">View our pipeline »</button>
           </div>
-          <button class="mobile-button-larger">View our pipeline »</button>
+          <button class="mobile-button-larger button-active">
+            View our pipeline »
+          </button>
         </div>
       </section>
       <section class="section-3">

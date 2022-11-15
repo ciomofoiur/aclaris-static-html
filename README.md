@@ -1,6 +1,6 @@
 # aclaris-static-html
 
-## Static site from Aclaris Technologies design
+## Static site from Aclaris Therapeutics design
 
 ### Technologies: HTML, CSS, JS (for menu toggle on mobile view)
 
